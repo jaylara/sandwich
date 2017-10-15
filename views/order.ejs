@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>My Sandwich App</title>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/global.css" media="screen" />
+</head>
+<body >
+	<!-- TODO: add home page content -->
+	<h1>Sandwich Shop</h1>
+	<header>
+		<nav></nav>
+	</header>
+	<main>
+		<section>
+		<p><span>Bread:</span>
+			<div id="select-bread"></div>
+			<!-- <input type="radio" name="select-bread" value="white"><label for="white">White</label>
+			<input type="radio" name="select-bread" value="wheat"><label for="wheat">Wheat</label>
+			<input type="radio" name="select-bread" value="flatbread"><label for="flatbread">Flatbread</label>
+			<input type="radio" name="select-bread" value="sourdough"><label for="sourdough">Sourdough</label>
+			<input type="radio" name="select-bread" value="jalapeno cheddar"><label for="jalapeno cheddar">Jalapeno Cheddar</label> -->
+		</p>
+		<p><span>Meats:</span>
+			<select id="select-meats">
+				<option value="" selected disabled hidden>Choose Meat</option>
+			</select>
+			<input type="button" id="add-meat" value="+"/>
+		</p>
+		<p><span>Vegetables:</span>
+			<select id="select-vegetables">
+				<option value="" selected disabled hidden>Choose Vegetable</option>
+			</select>
+			<input type="button" id="add-vegetable" value="+"/>
+		</p>
+		<p><span>Cheeses:</span>
+			<select id="select-cheeses">
+				<option value="" selected disabled hidden>Choose Cheese</option>
+			</select>
+			<input type="button" id="add-cheese" value="+"/>
+		</p>
+		<p><span>Sauces:</span>
+			<select id="select-sauces">
+				<option value="" selected disabled hidden>Choose Sauce</option>
+			</select>
+			<input type="button" id="add-sauce" value="+"/>
+		</p>
+		<p><span>Spices:</span>
+			<select id="select-spices">
+				<option value="" selected disabled hidden>Choose Spice</option>
+			</select>
+			<input type="button" id="add-spice" value="+"/></p>
+		</p>
+	</section>
+	<section>
+		<p>
+			<select id="select-beverages">
+				<option value="" selected disabled hidden>Choose Beverage</option>
+			</select>
+			<input type="button" id="add-beverage" value="+"/>
+		</p>
+		<p>
+			<select id="select-desserts">
+				<option value="" selected disabled hidden>Choose Dessert</option>
+			</select>
+			<input type="button" id="add-dessert" value="+"/>
+		</p>
+	</section>
+	<section>
+		<form id="order-form" method="POST" action="/order">
+			<h2>Sandwich</h2>
+			<div id="sandwich-order">
+				<h3>Meats:</h3><div id="meat-order"></div><br/>
+				<h3>Vegetables:</h3><div id="vegetable-order"></div><br/>
+				<h3>Cheeses:</h3><div id="cheese-order"></div><br/>
+				<h3>Sauces:</h3><div id="sauce-order"></div><br/>
+				<h3>Spices:</h3><div id="spice-order"></div>
+			</div>
+			<h2>Beverages</h2>
+			<div id="beverage-order"></div>
+			<h2>Desserts</h2>
+			<div id="dessert-order"></div>
+		</form>
+	</section>
+	</main>
+
+	<footer>
+	</footer>
+</body>
+</html>

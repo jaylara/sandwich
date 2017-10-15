@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My OAuth-Enabled App</title>
+
+</head>
+<body style="<%= backgroundColor %>">
+	<!-- TODO: add home page content -->
+	<h1>Facebook OAuth</h1>
+	<% if(user != undefined) { %>
+		<h2>Welcome back, <%= user.fb.firstName %></h2>
+		<% if (user.fb.profilePhoto) { %>
+			<img src="<%= user.fb.profilePhoto %>" />
+		<% } %>
+		<a href="/logout">Logout of Facebook</a>
+	<% } else { %>
+		<a href="/auth/facebook">Login of Facebook</a>
+	<% } %>
+</body>
+</html>

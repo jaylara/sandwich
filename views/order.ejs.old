@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>My Sandwich App</title>
+ <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="/js/main.js"></script>
+	<link rel="stylesheet" href="/css/global.css" media="screen" />
+</head>
+<body >
+	<!-- TODO: add home page content -->
+	<h1>Sandwich Shop</h1>
+	<header>
+		<nav></nav>
+	</header>
+	<main>
+		<p><span>Bread:</span>
+		<% breads.forEach((bread) => { %>
+			<input type="radio" name="select-bread" value="<%= bread.name %>"><label for="<%= bread.name %>"><%= bread.name %></label>
+		<% }); %>
+		<!-- <input type="radio" name="select-bread" value="white"><label for="white">White</label>
+		<input type="radio" name="select-bread" value="wheat"><label for="wheat">Wheat</label>
+		<input type="radio" name="select-bread" value="flatbread"><label for="flatbread">Flatbread</label>
+		<input type="radio" name="select-bread" value="sourdough"><label for="sourdough">Sourdough</label>
+		<input type="radio" name="select-bread" value="jalapeno cheddar"><label for="jalapeno cheddar">Jalapeno Cheddar</label> -->
+	</p>
+	<p><span>Meats:</span>
+		<select id="select-meats">
+			<% meats.forEach((meat) => { %>
+        		<option value="<%= meat.name %>"><%= meat.name %></option>
+    		<% }); %>
+		</select></p>
+	<p><span>Vegetables:</span>
+		<select id="select-vegetables">
+			<% vegetables.forEach((vegetable) => { %>
+        		<option value="<%= vegetable.name %>"><%= vegetable.name %></option>
+    		<% }); %>
+		</select></p>
+	<p><span>Cheeses:</span>
+		<select id="select-cheeses">
+			<% cheeses.forEach((cheese) => { %>
+        		<option value="<%= cheese.name %>"><%= cheese.name %></option>
+    		<% }); %>
+		</select></p>
+	<p><span>Sauces:</span>
+		<select id="select-sauces">
+			<% sauces.forEach((sauce) => { %>
+        		<option value="<%= sauce.name %>"><%= sauce.name %></option>
+    		<% }); %>
+		</select></p>
+	<p><span>Spices:</span>
+		<select id="select-spices">
+			<% spices.forEach((spice) => { %>
+        		<option value="<%= spice.name %>"><%= spice.name %></option>
+    		<% }); %>
+		</select></p>
+
+	</main>
+	<footer>
+	</footer>
+</body>
+</html>

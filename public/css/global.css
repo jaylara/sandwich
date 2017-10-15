@@ -1,0 +1,249 @@
+body {
+	font-family: 'Oswald', sans-serif;
+
+	background-color: white; /*rgb(120,7,7); blood cherry*/
+	top: 0; left: 0;
+	margin: 0 auto;
+}
+
+header {
+	color: rgb(186,188,189);  /*flicker of blue*/
+	margin: 0 0 25px 0;
+
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	/*background-image: url("../img/bgd-cinzinha.png");*/
+	padding-left: 15px;
+	border-bottom: 5px solid rgba(120,7,7, .75);
+	box-shadow: 10px 0px 10px rgba(0,0,0, .75);
+
+}
+
+#site-name {
+	text-transform: uppercase ;
+	letter-spacing: -0.05em;
+	font-weight: bold;
+}
+
+#page-name {
+	text-transform: lowercase ;
+
+	font-weight: lighter;
+
+}
+
+input, select, option, form, label {
+	text-transform: capitalize;
+}
+
+select {
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 255, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 255, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+
+header>a {
+
+	color: rgb(58,51,51);  /*sleep*/
+
+	text-decoration: none;
+	line-height: 30px;
+	font-size: 30px;
+
+
+}
+
+.title {
+
+}
+
+
+main {
+	display: flex;
+}
+
+section {
+	flex: 1;
+margin: 6px 12px;
+padding: 6px 12px;
+border: 1px solid #ccc;
+border-radius: 10px;
+}
+
+h3, form div {
+	display: inline;
+}
+
+#order-form .remove {
+	margin-right: 15px;
+	cursor: pointer;
+	color: darkred;
+
+}
+
+/*
+nav {
+
+}
+nav ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	font-size: 2em;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0;
+
+}
+
+nav a {
+	letter-spacing: -0.05em;
+	text-decoration: none;
+	color: #000;
+	display: block;
+	transition: .3s background-color;
+	padding: 20px 30px;
+	background-color: rgba(203,203,203, 0.75);
+	border-left: 1px solid rgba(255,255,255, .75);
+	border-right: 1px solid rgba(255,255,255, .75);
+
+
+
+}
+
+nav a:hover, nav a.active {
+
+	background-color: rgba(120,7,7,.75);
+	color: #fff;
+
+}
+
+nav a.active {
+	cursor: default;
+}*/
+
+
+/*
+nav {
+background-color: rgba(120,7,7,.75);
+text-transform: lowercase ;
+margin: 0;
+padding: 0;
+font-weight: lighter;
+display: flex;
+align-items: flex-start;
+}
+
+nav ul{
+padding: 0;
+margin: 0;
+list-style-type: none;
+display:flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-between;
+
+
+}
+
+nav ul li  a {
+color: rgb(255,255,255);
+font-size: 20px;
+font-weight: lighter;
+text-decoration: none;
+height: 100px;
+align-items: center;
+justify-content: space-around;
+display: flex;
+width: 100%;
+
+}
+
+nav ul li:hover {
+color: rgb(186,188,189);
+}
+
+
+nav ul li {
+border: 1px solid dimgray;
+
+padding: 0 30px;
+display: flex;
+}
+
+nav ul li:first-child {
+border-top-right-radius: 10px 10px;
+border-bottom-right-radius: 10px 10px;
+}*/
+
+
+
+
+
+/*
+#main {
+	display: flex;
+	flex-direction: column;
+}
+
+.story {
+	border-top: 1px solid dimgray;
+	background-color: rgba(255,255,255, .9);
+	padding: 5px;
+	font-size: 1.2em;
+	display: flex;
+
+	box-shadow: 10px 0px 10px rgba(0,0,0, .75);
+
+}
+.story p{
+	padding: 0;
+	margin: 0;
+}
+
+
+.story .score {
+
+	text-align: center;
+	color: silver;
+}
+
+.story .img {
+	border: 1px solid black;
+	margin: 2px 5px;
+	flex: 0;
+	bottom: 0;
+	height: 100px;
+	width: 100px;
+}
+.story img {
+	padding: 0;
+	margin: 0;
+}
+
+.story .content {
+
+	border: 1px solid black;
+	align-content: flex-start;
+}
+
+.story .content p {
+	padding: 0 auto;
+	margin: 0 auto;
+}*/

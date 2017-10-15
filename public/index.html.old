@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Ajaxify Reddit</title>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" /> -->
+	<!-- jQuery -->
+ <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/global.css" media="screen" />
+</head>
+<body>
+
+	<header>
+		<a href="#" id="site-name">Sandwich Shop: <span id="page-name">title</span></a>
+		<nav>
+			<ul class="links">
+
+			</ul>
+		</nav>
+	</header>
+
+
+
+	<div id="main">
+		<!-- <div class="story">
+			<div class="score"><span class="plus">&#043;</span> <p class="number">3.7K</p>
+			<span class="minus">&#8722;</span> </div>
+			<div class="img"><img height=100 src="${this.thumbnail}"></div>
+			<div class="content">
+				<p><a class="title" href='${this.url}'>${this.title}</a> <a class="domain" href='${this.domain}'>(${this.domain})</a></p>
+				<p>Posted By <a class="author" href="#"> ${this.author}</a> | <a href="${Reddit.mainUrl}${this.subreddit}">${this.subreddit}</a></p>
+			</div>
+		</div> -->
+
+	</div>
+	<footer>
+		<!-- <a href="http://www.colourlovers.com/pattern/5654473/cinzinha" target="_blank">
+			<img src="http://www.colourlovers.com/images/badges/n/5654/5654473_cinzinha.png" style="width: 240px; height: 120px; border: 0 none;" alt="cinzinha" />
+		</a> --><br />
+		<span style="font-size: 10px; color: #5e5e5e;"><a href="http://www.colourlovers.com/seamless-studio" target="_blank" style="font-size: 10px; color: #5e5e5e;">
+			Vector Patterns</a> by <a href="http://www.colourlovers.com/" target="_blank" style="font-size: 10px; color: #5e5e5e;">COLOURlovers</a>
+		</span>
+		<!-- <a href="http://www.colourlovers.com/palette/4530182/old_wounds_anew" target="_blank">
+			<img src="http://www.colourlovers.com/images/badges/p/4530/4530182_old_wounds_anew.png" style="width: 240px; height: 120px; border: 0 none;" alt="old_wounds_anew" />
+		</a> --><br />
+		<span style="font-size: 10px; color: #5e5e5e;"><a href="http://www.colourlovers.com/color" target="_blank" style="font-size: 10px; color: #5e5e5e;">
+			Color</a> by <a href="http://www.colourlovers.com/" target="_blank" style="font-size: 10px; color: #5e5e5e;">COLOURlovers</a>
+		</span>
+
+	</footer>
+</body></html>
