@@ -14,76 +14,70 @@
 		<nav></nav>
 	</header>
 	<main>
-		<section>
-		<p><span>Bread:</span>
-			<div id="select-bread"></div>
-			<!-- <input type="radio" name="select-bread" value="white"><label for="white">White</label>
-			<input type="radio" name="select-bread" value="wheat"><label for="wheat">Wheat</label>
-			<input type="radio" name="select-bread" value="flatbread"><label for="flatbread">Flatbread</label>
-			<input type="radio" name="select-bread" value="sourdough"><label for="sourdough">Sourdough</label>
-			<input type="radio" name="select-bread" value="jalapeno cheddar"><label for="jalapeno cheddar">Jalapeno Cheddar</label> -->
-		</p>
-		<p><span>Meats:</span>
-			<select id="select-meats">
-				<option value="" selected disabled hidden>Choose Meat</option>
-			</select>
-			<input type="button" id="add-meat" value="+"/>
-		</p>
-		<p><span>Vegetables:</span>
-			<select id="select-vegetables">
-				<option value="" selected disabled hidden>Choose Vegetable</option>
-			</select>
-			<input type="button" id="add-vegetable" value="+"/>
-		</p>
-		<p><span>Cheeses:</span>
-			<select id="select-cheeses">
-				<option value="" selected disabled hidden>Choose Cheese</option>
-			</select>
-			<input type="button" id="add-cheese" value="+"/>
-		</p>
-		<p><span>Sauces:</span>
-			<select id="select-sauces">
-				<option value="" selected disabled hidden>Choose Sauce</option>
-			</select>
-			<input type="button" id="add-sauce" value="+"/>
-		</p>
-		<p><span>Spices:</span>
-			<select id="select-spices">
-				<option value="" selected disabled hidden>Choose Spice</option>
-			</select>
-			<input type="button" id="add-spice" value="+"/></p>
-		</p>
-	</section>
-	<section>
-		<p>
-			<select id="select-beverages">
-				<option value="" selected disabled hidden>Choose Beverage</option>
-			</select>
-			<input type="button" id="add-beverage" value="+"/>
-		</p>
-		<p>
-			<select id="select-desserts">
-				<option value="" selected disabled hidden>Choose Dessert</option>
-			</select>
-			<input type="button" id="add-dessert" value="+"/>
-		</p>
-	</section>
-	<section>
 		<form id="order-form" method="POST" action="/order">
-			<h2>Sandwich</h2>
-			<div id="sandwich-order">
-				<h3>Meats:</h3><div id="meat-order"></div><br/>
-				<h3>Vegetables:</h3><div id="vegetable-order"></div><br/>
-				<h3>Cheeses:</h3><div id="cheese-order"></div><br/>
-				<h3>Sauces:</h3><div id="sauce-order"></div><br/>
-				<h3>Spices:</h3><div id="spice-order"></div>
-			</div>
-			<h2>Beverages</h2>
-			<div id="beverage-order"></div>
-			<h2>Desserts</h2>
-			<div id="dessert-order"></div>
+			<section class="create-sandwich">
+				<div id="select-bread">
+					<h3>Bread:</h3>
+				</div>
+				<div class="topping">
+					<h3>Meats:</h3>
+					<select id="select-meats">
+						<option value="" selected disabled hidden>Select Meat</option>
+					</select>
+					<input type="button" id="add-meat" value="+"/>
+					<div id="meat-order" class="topping-selected"></div>
+				</div>
+				<div class="topping">
+					<h3>Vegetables:</h3>
+					<select id="select-vegetables">
+						<option value="" selected disabled hidden>Select Vegetable</option>
+					</select>
+					<input type="button" id="add-vegetable" value="+"/>
+					<div id="vegetable-order" class="topping-selected"></div>
+				</div>
+				<div class="topping">
+					<h3>Cheeses:</h3>
+					<select id="select-cheeses">
+						<option value="" selected disabled hidden>Select Cheese</option>
+					</select>
+					<input type="button" id="add-cheese" value="+"/>
+					<div id="cheese-order" class="topping-selected"></div>
+				</div>
+				<div class="topping">
+					<h3>Sauces:</h3>
+					<select id="select-sauces">
+						<option value="" selected disabled hidden>Select Sauce</option>
+					</select>
+					<input type="button" id="add-sauce" value="+"/>
+					<div id="sauce-order" class="topping-selected"></div>
+				</div>
+				<div class="topping">
+					<h3>Spices:</h3>
+					<select id="select-spices">
+						<option value="" selected disabled hidden>Select Spice</option>
+					</select>
+					<input type="button" id="add-spice" value="+"/>
+					<div id="spice-order" class="topping-selected"></div>
+				</div>
+			</section>
+			<section class="create-sides">
+				<div class="beverage">
+					<select id="select-beverages">
+						<option value="" selected disabled hidden>Select Beverage</option>
+					</select>
+					<input type="button" id="add-beverage" value="+"/>
+					<div id="beverage-order" class="topping-selected"></div>
+				</div>
+				<div class="dessert">
+					<select id="select-desserts">
+						<option value="" selected disabled hidden>Select Dessert</option>
+					</select>
+					<input type="button" id="add-dessert" value="+"/>
+					<div id="dessert-order" class="topping-selected"></div>
+				</div>
+			</section>
 		</form>
-	</section>
+
 	</main>
 
 	<footer>

@@ -16,11 +16,11 @@ function addPlusButtonEvent (buttonCategory,validation_list) {
 		var name = `#select-${buttonCategory}s`;
 		var val = $(name).val();
 		var txt = $(`${name} :selected`).text();
-		var category = buttonCategory;
+
 		if(validation_list[val]){
 			// if(toppingTypes.indexOf(buttonCategory) !== -1)
 			// 	category="sandwich";
-			$(`#${buttonCategory}-order`).append(`<div><input type="hidden" value="${val}"/>${txt} <span class="remove">[x]</span></div>`);
+			$(`#${buttonCategory}-order`).append(`<div><span class="remove">[x]</span><input type="hidden" value="${val}"/>${txt}</div>`);
 
 			$(`#${buttonCategory}-order span:last`).on('click',function() {
 				$(this).closest('div').remove()
@@ -45,7 +45,7 @@ var initializeToppings = (resp) => {
 	});
 
 	breadTypes.forEach((bread) => {
-		$(`#select-bread`).append(`<input type="radio" name="select-bread" value="${bread}"><label for="${bread}">${bread}</label>`);
+		$(`#select-bread`).append(`<p><input type="radio" name="select-bread" value="${bread}"><label for="${bread}">${bread}</label></p>`);
 	});
 
 	$("#select-bread input:nth(0)").prop("checked", true);
